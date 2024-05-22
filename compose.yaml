@@ -1,0 +1,9 @@
+services:
+  devenv:
+    build:
+      context: .
+      dockerfile: Containerfile
+      target: env
+    volumes:
+      - ./:/app
+    working_dir: /app
